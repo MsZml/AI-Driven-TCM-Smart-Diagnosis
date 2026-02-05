@@ -10,8 +10,9 @@ pip install llama-index
 pip install llama-index-llms-dashscope  
 pip install llama-index-embeddings-dashscope  
 pip install gradio==6.5.1 
-配置api_key:  
-
+配置api-key:  
+在阿里云百炼申请即可免费试用100万token，然后在本地配置api-key的环境变量  
+变量名为：DASHSCOPE_API_KEY  变量值为你申请的api-key
 
 目录结构：  
 ├── data/ # 项目核心数据目录（存放中医语料/测试文本）  
@@ -24,11 +25,9 @@ pip install gradio==6.5.1
 │   ├── image_vector_store.json # 图片向量存储文件（如中医相关图片检索）  
 │   └── index_store.json # 向量/文档检索索引文件（提升查询效率）   
 ├── README.md # 项目说明文档（介绍/使用/配置等）  
-├── Untitled.ipynb # Jupyter Notebook（开发调试/功能验证）  
+├── Untitled.ipynb # Jupyter Notebook（使用jupyter进行分步学习调试，理解模型运行底层原理）  
 ├── tcm_chatbot.py # 中医聊天机器人核心逻辑文件（TCM=中医）  
 └── tcm_web_ui.py # 中医机器人Web交互界面文件（可视化对话入口）  
-
- 
 
 运行项目：  
 首先运行tcm_chatbot.py文件查看是否报错，再运行tcm_web_ui.py
