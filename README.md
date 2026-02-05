@@ -13,12 +13,19 @@ pip install llama-index-embeddings-dashscope
 
 
 目录结构：  
-
-├── src/          # 核心代码  
-│   ├── main.ts   # 入口文件  
-│   └── utils/    # 工具函数  
-├── public/       # 静态资源  
-└── config/       # 配置文件  
+├── data/ # 项目核心数据目录（存放中医语料/测试文本）
+│   ├── demo.txt # 演示用测试文本
+│   └── 《中医临床诊疗术语第2部分：... # 中医诊疗术语核心语料文件
+├── doc_emb/ # 文档嵌入/向量数据库目录（AI语义检索核心数据）
+│   ├── default_vector_store.json # 默认文本向量存储文件
+│   ├── docstore.json # 原始文档与向量映射存储文件
+│   ├── graph_store.json # 知识图谱结构存储文件（中医关联关系）
+│   ├── image_vector_store.json # 图片向量存储文件（如中医相关图片检索）
+│   └── index_store.json # 向量/文档检索索引文件（提升查询效率）
+├── README.md # 项目说明文档（介绍/使用/配置等）
+├── Untitled.ipynb # Jupyter Notebook（开发调试/功能验证）
+├── tcm_chatbot.py # 中医聊天机器人核心逻辑文件（TCM=中医）
+└── tcm_web_ui.py # 中医机器人Web交互界面文件（可视化对话入口）
 
   
 注意事项：gradio=6.5.1  
