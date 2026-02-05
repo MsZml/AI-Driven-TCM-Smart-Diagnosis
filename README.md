@@ -6,7 +6,7 @@
 
 
 
-安装依赖包：  
+在创建的环境下安装依赖包：  
 pip install llama-index  
 pip install llama-index-llms-dashscope  
 pip install llama-index-embeddings-dashscope  
