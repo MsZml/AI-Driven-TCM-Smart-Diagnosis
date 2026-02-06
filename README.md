@@ -11,7 +11,8 @@ pip install llama-index-llms-dashscope
 pip install llama-index-embeddings-dashscope  
 pip install gradio==6.5.1 
 配置api-key:  
-在阿里云百炼申请即可免费试用100万token，然后在本地配置api-key的环境变量  
+在阿里云百炼申请即可免费试用100万token，网址为：https://bailian.console.aliyun.com/
+然后在本地配置api-key的环境变量  
 变量名为：DASHSCOPE_API_KEY  变量值为你申请的api-key
 
 目录结构：  
